@@ -16,6 +16,7 @@ public class EnnemisManager : MonoBehaviour
     public float axeSpeed = 160f;
 
     public GameObject Arrow;
+    public GameObject lifeDrop;
 
     // Start is called before the first frame update
     void Start()
@@ -39,9 +40,19 @@ public class EnnemisManager : MonoBehaviour
         if (lifePoint <= 0)
         {
             gameObject.SetActive(false);
-            var arrow = Instantiate(Arrow);
-            arrow.transform.position = gameObject.transform.position;
-            arrow.GetComponent<ArrowManager>().isMooving = false;
+            var id = Random.Range(1,4);
+            if (id == 1)
+            {
+                var arrow = Instantiate(Arrow);
+                arrow.transform.position = gameObject.transform.position;
+                arrow.GetComponent<ArrowManager>().isMooving = false;
+            }
+            else if(id == 2){
+                var lifedrop = Instantiate(lifeDrop);
+                lifedrop.transform.position = gameObject.transform.position;
+            }
+            
+
         }
     }
 

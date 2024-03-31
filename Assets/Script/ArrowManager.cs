@@ -32,6 +32,9 @@ public class ArrowManager : MonoBehaviour
         if(collision.collider.gameObject.tag == "Ennemis")
         {
             collision.gameObject.GetComponent<EnnemisManager>().OnEnnemisHit(damage);
+        }else if (collision.collider.gameObject.tag == "Pillar")
+        {
+            collision.collider.gameObject.GetComponent<PillarManager>().OnPillarHit();
         }
     }
 

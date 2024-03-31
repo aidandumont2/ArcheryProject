@@ -102,4 +102,12 @@ public class PlayerManager : MonoBehaviour
             }
         }
     }
+
+    public void PickLife()
+    {
+        if (currentLife <3)
+        {
+            currentLife += 1;
+        }
+    }
 }
