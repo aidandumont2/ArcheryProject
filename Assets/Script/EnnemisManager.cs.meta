@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: d78d83163bc903c47a9faaa79eb20193
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - pivot: {instanceID: 0}
+  - player: {instanceID: 0}
+  - Arrow: {fileID: 7041949023091850294, guid: fcb1e230cf3f55b4d9e8499f445b9d5b, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
