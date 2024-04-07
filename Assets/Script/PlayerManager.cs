@@ -14,6 +14,7 @@ public class PlayerManager : MonoBehaviour
 
     public float speed = 6f;
 
+    private bool canBeHit = true;
 
     public GameObject Arrow;
 
@@ -98,24 +99,29 @@ public class PlayerManager : MonoBehaviour
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
-        
-        if (collision.collider.gameObject.tag == "Weapon")
+        if (collision.collider.gameObject.tag == "Weapon" && canBeHit)
         {
-            SetHealth();
+            canBeHit = false;
             currentLife -= 1;
+            SetHealth();
             if (currentLife <= 0)
             {
                 gameManager.OnChangeState(GameManager.GameState.EndMenu);
                 
             }
+            StartCoroutine(Invulnerability());
+            
         }
     }
 
     public void PickLife()
     {
-        if (currentLife <3)
+        
+        if (currentLife <maxLife)
         {
             currentLife += 1;
+            //Debug.Log(currentLife);
+            SetHealth();
         }
     }
 
@@ -128,5 +134,11 @@ public class PlayerManager : MonoBehaviour
     {
         
         slider.value = currentLife;
+    }
+
+    IEnumerator Invulnerability()
+    {
+        yield return new WaitForSeconds(1);
+        canBeHit = true;
     }
 }
