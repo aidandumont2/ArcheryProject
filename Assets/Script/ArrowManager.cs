@@ -43,7 +43,7 @@ public class ArrowManager : MonoBehaviour
         if(collision.gameObject.tag == "Player")
         {
             collision.gameObject.GetComponent<PlayerManager>().PickArrow();
-            gameObject.SetActive(false);
+            Destroy(gameObject);
         }
     }
 }

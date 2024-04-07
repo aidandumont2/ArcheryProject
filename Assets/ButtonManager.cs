@@ -6,6 +6,7 @@ public class ButtonManager : MonoBehaviour
 {
     public GameManager gameManager;
 
+
     public void PlayTheGame()
     {
         gameManager.OnChangeState(GameManager.GameState.Playing);
@@ -26,7 +27,9 @@ public class ButtonManager : MonoBehaviour
     {
         
         gameManager.player.transform.position = gameManager.spawnPoint.transform.position;
-        gameManager.player.GetComponent<PlayerManager>().currentLife = 3;
+        gameManager.player.GetComponent<PlayerManager>().currentLife = 5;
         gameManager.player.GetComponent<PlayerManager>().nbOfArrows = 3;
+        gameManager.player.GetComponent<PlayerManager>().SetHealth();
+        gameManager.OnChangeState(GameManager.GameState.Playing);
     }
 }

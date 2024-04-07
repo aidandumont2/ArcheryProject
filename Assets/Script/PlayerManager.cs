@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.InputSystem;
 using TMPro;
+using UnityEngine.UI;
 
 public class PlayerManager : MonoBehaviour
 {
@@ -24,8 +25,10 @@ public class PlayerManager : MonoBehaviour
 
     public int nbOfArrows = 3;
 
-    public int currentLife = 3;
-  
+    public int maxLife = 5;
+    public int currentLife = 5;
+
+    public Slider slider;
 
     private float rot_z;
     // Start is called before the first frame update
@@ -44,6 +47,9 @@ public class PlayerManager : MonoBehaviour
         controls.Player.Dash.performed += context => ActiveDash(false);
 
         txtNbArrows.text = "X " + nbOfArrows;
+
+        slider.maxValue = maxLife;
+        SetHealth();
     }
 
     // Update is called once per frame
@@ -95,10 +101,12 @@ public class PlayerManager : MonoBehaviour
         
         if (collision.collider.gameObject.tag == "Weapon")
         {
+            SetHealth();
             currentLife -= 1;
             if (currentLife <= 0)
             {
                 gameManager.OnChangeState(GameManager.GameState.EndMenu);
+                
             }
         }
     }
@@ -109,5 +117,16 @@ public class PlayerManager : MonoBehaviour
         {
             currentLife += 1;
         }
+    }
+
+    public void setUI()
+    {
+        txtNbArrows.text = "X " + nbOfArrows;
+    }
+
+    public void SetHealth()
+    {
+        
+        slider.value = currentLife;
     }
 }

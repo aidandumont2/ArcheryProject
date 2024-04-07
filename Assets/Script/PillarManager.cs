@@ -8,12 +8,15 @@ public class PillarManager : MonoBehaviour
     public Sprite brokenPillar;
     public bool isBroken = false;
 
+    
+    
     public void OnPillarHit()
     {
         if (!isBroken)
         {
-            boss.lifePoint -= 1;
+            boss.OnBossHit();
             GetComponent<SpriteRenderer>().sprite = brokenPillar;
+            GetComponentInChildren<Cainos.PixelArtTopDown_Basic.SpriteColorAnimation>().gameObject.SetActive(false);
             isBroken = true;
         }
     }

@@ -18,6 +18,7 @@ public class GameManager : MonoBehaviour
     public Canvas pauseMenu;
     public Canvas mainMenu;
     public Canvas deathMenu;
+    public Canvas winMenu;
 
     public GameObject player;
     public GameObject spawnPoint;
@@ -66,7 +67,9 @@ public class GameManager : MonoBehaviour
     {
         Time.timeScale = 1;
         mainMenu.gameObject.SetActive(false);
+        deathMenu.gameObject.SetActive(false);
         currentState = GameState.Playing;
+        player.GetComponent<PlayerManager>().setUI();
     }
 
     void PauseState()
@@ -93,8 +96,10 @@ public class GameManager : MonoBehaviour
         deathMenu.gameObject.SetActive(true);
     }
 
-    void Respawn()
+    public void Win()
     {
+        Time.timeScale = 0;
+        winMenu.gameObject.SetActive(true);
 
     }
 }

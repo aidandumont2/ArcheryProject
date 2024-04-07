@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class EnnemisManager : MonoBehaviour
 {
-    public int lifePoint = 2;
+    public int maxLife;
+    public int lifePoint;
     
     public GameObject pivot;
 
@@ -18,10 +20,13 @@ public class EnnemisManager : MonoBehaviour
     public GameObject Arrow;
     public GameObject lifeDrop;
 
+    public Slider slider;
+
     // Start is called before the first frame update
     void Start()
     {
-        
+        slider.maxValue = maxLife;
+        slider.value = lifePoint;
     }
 
     // Update is called once per frame
@@ -37,6 +42,7 @@ public class EnnemisManager : MonoBehaviour
     public void OnEnnemisHit(int damage)
     {
         lifePoint -= damage;
+        slider.value = lifePoint;
         if (lifePoint <= 0)
         {
             gameObject.SetActive(false);
