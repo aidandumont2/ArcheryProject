@@ -1,6 +1,6 @@
 # ArcheryProject
 
-Archery Project est un jeu en vue top down ou vous incarne un archer dont le but est de parcourir un chateau en combatant des hordes d'ennemies et des boss bien determinés à garder le chateau inexploré.
+Archery Project est un jeu en vue top down ou vous incarnez un archer dont le but est de parcourir un chateau en combatant des hordes d'ennemies et des boss bien determinés à garder le chateau inexploré.
 
 # Features
 
