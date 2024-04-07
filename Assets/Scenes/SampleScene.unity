@@ -32280,7 +32280,7 @@ Transform:
   m_GameObject: {fileID: 1800415288}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -33514,6 +33514,70 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 1475026631430210509, guid: 15c56a798bca4c5408222fb75d17578c, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -770
+      objectReference: {fileID: 0}
+    - target: {fileID: 1475026631430210509, guid: 15c56a798bca4c5408222fb75d17578c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 505
+      objectReference: {fileID: 0}
+    - target: {fileID: 1787723390409601449, guid: 15c56a798bca4c5408222fb75d17578c, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: -869.0001
+      objectReference: {fileID: 0}
+    - target: {fileID: 1787723390409601449, guid: 15c56a798bca4c5408222fb75d17578c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 402.3
+      objectReference: {fileID: 0}
+    - target: {fileID: 2766144767284454958, guid: 15c56a798bca4c5408222fb75d17578c, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2766144767284454958, guid: 15c56a798bca4c5408222fb75d17578c, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2766144767284454958, guid: 15c56a798bca4c5408222fb75d17578c, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2766144767284454958, guid: 15c56a798bca4c5408222fb75d17578c, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2766144767284454958, guid: 15c56a798bca4c5408222fb75d17578c, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2766144767284454958, guid: 15c56a798bca4c5408222fb75d17578c, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2766144767284454958, guid: 15c56a798bca4c5408222fb75d17578c, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2766144767284454958, guid: 15c56a798bca4c5408222fb75d17578c, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2766144767284454958, guid: 15c56a798bca4c5408222fb75d17578c, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2766144767284454958, guid: 15c56a798bca4c5408222fb75d17578c, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2766144767284454958, guid: 15c56a798bca4c5408222fb75d17578c, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2766144767284454958, guid: 15c56a798bca4c5408222fb75d17578c, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 2781250727068141373, guid: 15c56a798bca4c5408222fb75d17578c, type: 3}
       propertyPath: dashForce
       value: 20000
@@ -33582,6 +33646,14 @@ PrefabInstance:
       propertyPath: m_Camera
       value: 
       objectReference: {fileID: 519420031}
+    - target: {fileID: 8936801293027677640, guid: 15c56a798bca4c5408222fb75d17578c, type: 3}
+      propertyPath: m_RenderMode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9215821612012113897, guid: 15c56a798bca4c5408222fb75d17578c, type: 3}
+      propertyPath: m_PresetInfoIsWorld
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -33672,7 +33744,6 @@ SceneRoots:
   - {fileID: 519420032}
   - {fileID: 1234439200}
   - {fileID: 6567915855849805339}
-  - {fileID: 1800415290}
   - {fileID: 273178536}
   - {fileID: 5330540426702421877}
   - {fileID: 270068038}
@@ -33688,3 +33759,4 @@ SceneRoots:
   - {fileID: 3043653356140080639}
   - {fileID: 1953548844454297788}
   - {fileID: 154016005686896193}
+  - {fileID: 1800415290}

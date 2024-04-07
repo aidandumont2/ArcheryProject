@@ -50,6 +50,7 @@ public class BossManager : MonoBehaviour
         }
     }
 
+    
     IEnumerator StartFight()
     {
         yield return new WaitForSeconds(2);

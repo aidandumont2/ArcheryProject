@@ -61,6 +61,7 @@ public class GameManager : MonoBehaviour
     {
         currentState = GameState.Menu;
         Time.timeScale = 0;
+        //player.GetComponent<Canvas>().gameObject.SetActive(false);
     }
 
     void PlayingState()
