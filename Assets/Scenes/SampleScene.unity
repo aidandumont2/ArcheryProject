@@ -5068,6 +5068,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   gameManager: {fileID: 1249748150}
+--- !u!1 &1691808451 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 3964722039281747076, guid: ddc9691686703684f9715165b3dc527e, type: 3}
+  m_PrefabInstance: {fileID: 154016005686896193}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1702986788
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -33594,6 +33599,10 @@ PrefabInstance:
       propertyPath: firstPattern
       value: 
       objectReference: {fileID: 739084354}
+    - target: {fileID: 57377425104115084, guid: 255398b7337ac35449e50d6f216be025, type: 3}
+      propertyPath: thirdPattern
+      value: 
+      objectReference: {fileID: 1691808451}
     - target: {fileID: 57377425104115084, guid: 255398b7337ac35449e50d6f216be025, type: 3}
       propertyPath: secondPattern
       value: 
