@@ -31,6 +31,8 @@ public class PlayerManager : MonoBehaviour
 
     public Slider slider;
 
+    public float dashForce = 10f;
+
     private float rot_z;
     // Start is called before the first frame update
     void Start()
@@ -91,7 +93,10 @@ public class PlayerManager : MonoBehaviour
     {
         if (DoDash)
         {
-            transform.position = Vector3.Lerp(transform.position, Camera.main.ScreenToWorldPoint(Input.mousePosition), 1f);
+            //transform.position = Vector3.Lerp(transform.position, Camera.main.ScreenToWorldPoint(Input.mousePosition), 1f);
+
+            Vector3 dashDirection = (Camera.main.ScreenToWorldPoint(Input.mousePosition) - transform.position).normalized;
+            GetComponent<Rigidbody2D>().AddForce(dashDirection * dashForce, ForceMode2D.Force);
         }
         
      

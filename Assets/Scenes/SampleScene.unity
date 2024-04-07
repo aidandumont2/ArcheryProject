@@ -1755,7 +1755,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: U ded
+  m_text: You are DEAD
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -2753,7 +2753,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 'U Win '
+  m_text: You Win !
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -33515,9 +33515,17 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 2781250727068141373, guid: 15c56a798bca4c5408222fb75d17578c, type: 3}
+      propertyPath: dashForce
+      value: 20000
+      objectReference: {fileID: 0}
+    - target: {fileID: 2781250727068141373, guid: 15c56a798bca4c5408222fb75d17578c, type: 3}
       propertyPath: gameManager
       value: 
       objectReference: {fileID: 1249748150}
+    - target: {fileID: 2781250727068141373, guid: 15c56a798bca4c5408222fb75d17578c, type: 3}
+      propertyPath: dashDistance
+      value: 10
+      objectReference: {fileID: 0}
     - target: {fileID: 7804782037674594806, guid: 15c56a798bca4c5408222fb75d17578c, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.56
